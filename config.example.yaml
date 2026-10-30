@@ -1,0 +1,20 @@
+# Общие настройки приложения
+app:
+  mode: "development"  # development | production
+  version: "1.0.0"  # Версия приложения
+  time_timezone: "Europe/Moscow"  # Временная зона для cron-расписаний (UTC, Europe/Moscow, etc.)
+
+# Настройки HTTP API
+api:
+  bearer_token: "change-me"  # Статический Bearer токен для всех /api/* маршрутов
+
+
+# Настройки PostgreSQL
+postgres:
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "postgres_password_change_me"
+  database: "anubis_auth"
+  sslmode: "disable"  # disable | require | verify-full
+  max_pool: 10  # Максимальный размер пула соединений
